@@ -2,8 +2,12 @@ import discord
 from discord.ext import commands
 import requests
 
-# Replace 'your_token_here' with your Discord bot token
-bot = commands.Bot(command_prefix='!')
+intents = discord.Intents.default()
+intents.messages = True
+intents.message_content = True  # Ensure this is enabled
+bot = commands.Bot(command_prefix='!', intents=intents)
+
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
@@ -26,4 +30,4 @@ async def deal(ctx, *, game_name):
     await ctx.send(deal_message)
 
 # Replace 'your_token_here' with your actual bot token
-bot.run('your_token_here')
+bot.run('INSERT TOKEN HERE')
