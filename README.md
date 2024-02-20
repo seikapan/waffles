@@ -1,5 +1,5 @@
 # waffles
-- pc game deals checker
+- Discord bot to check PC game deals [!deal (game name)]
 
 1. add discord bot token
 2. add to your server
