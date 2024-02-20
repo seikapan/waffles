@@ -1,4 +1,4 @@
-# waffles
+# Waffles Bot
 - Discord bot to check PC game deals [!deal (game name)]
 
 1. type 'pip install -r requirements.txt' in terminal
